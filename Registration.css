@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::placeholder{
+    font-size: 0.9rem;
+}
+.Form_Background{
+    width: 100vw;
+    height:100vh;
+    background-size: 100% 100%;
+    background-image: url("laptop_background.jpg");
+}
+
+.bytecode_logo{
+   width: 6vw;
+   height: 11vh;
+   position: absolute;
+   background-image: url("bytecode.png");
+   top: 2vh;
+   left: 44vw;
+   background-size: 100% 100%;
+   animation: logo_animation 5s infinite;
+   animation-direction: alternate;
+}
+
+@keyframes logo_animation{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.mongoDB_logo{
+   width: 10vw;
+   height: 20vh;
+   position: absolute;
+   background-image: url("mongodb.png");
+   top: 86vh;
+   left: 78vw;
+   background-size: 100% 100%;
+   animation: mongodb_animation 28s infinite;
+   animation-direction: alternate;
+}
+.react_logo{
+    width: 6vw;
+    height: 11vh;
+    position: absolute;
+    background-image: url("React.png");
+    top: 2vh;
+    left: 93vw;
+    background-size: 100% 100%;
+    animation: react_animation 28s infinite;
+    animation-direction: alternate;
+}
+.front_end_logo{
+   width: 6vw;
+   height: 12vh;
+   position: absolute;
+   background-image: url("frontend.png");
+   top: 2vh;
+   left: 5vw;
+   background-size: 100% 100%;
+   animation: frontend_animation 28s infinite;
+   animation-direction: alternate;
+}
+.nodejs_logo{
+   width: 8vw;
+   height: 15vh;
+   position: absolute;
+   background-image: url("nodejs.png");
+   top: 86vh;
+   left: 16vw;
+   background-size: 100% 100%;
+   animation:  node_animation 28s infinite;
+   animation-direction: alternate;
+}
+@keyframes node_animation {
+    100%   { transform:rotate(0deg) ;left:16vw; top:2vh;}
+    90%  { transform:rotate(360deg) ;left:16vw; top:15vh;}
+    80%  { transform:rotate(0deg) ;left:16vw; top:24vh;}
+    70%  { transform:rotate(720deg) ;left:16vw; top:32vh;}
+    60%  { transform:rotate(0deg) ;left:16vw; top:40vh;}
+    50%  { transform:rotate(480deg) ;left:16vw; top:48vh;}
+    40%  { transform:rotate(0deg) ;left:16vw; top:56vh;}
+    30%  { transform:rotate(480deg) ;left:16vw; top:64vh;}
+    20%  { transform:rotate(0deg) ;left:16vw; top:72vh;}
+    10%  { transform:rotate(720deg) ;left:16vw; top:80vh;}
+    0% { transform:rotate(180deg) ;left:16vw; top:88vh;}
+  }
+
+  
+@keyframes react_animation {
+    0%   { transform:rotate(0deg) ;left:91vw; top:2vh;}
+    10%  { transform:rotate(360deg) ;left:91vw; top:15vh;}
+    20%  { transform:rotate(0deg) ;left:91vw; top:24vh;}
+    30%  { transform:rotate(480deg) ;left:91vw; top:32vh;}
+    40%  { transform:rotate(0deg) ;left:91vw; top:40vh;}
+    50%  { transform:rotate(480deg) ;left:91vw; top:48vh;}
+    60%  { transform:rotate(0deg) ;left:91vw; top:56vh;}
+    70%  { transform:rotate(480deg) ;left:91vw; top:64vh;}
+    80%  { transform:rotate(0deg) ;left:91vw; top:72vh;}
+    90%  { transform:rotate(480deg) ;left:91vw; top:80vh;}
+    100% { transform:rotate(180deg) ;left:91vw; top:88vh;}
+  }
+    
+@keyframes frontend_animation {
+    0%   { transform:rotate(0deg) ;left:6vw; top:2vh;}
+    10%  { transform:rotate(360deg) ;left:6vw; top:15vh;}
+    20%  { transform:rotate(0deg) ;left:6vw; top:24vh;}
+    30%  { transform:rotate(480deg) ;left:6vw; top:32vh;}
+    40%  { transform:rotate(0deg) ;left:6vw; top:40vh;}
+    50%  { transform:rotate(480deg) ;left:6vw; top:48vh;}
+    60%  { transform:rotate(0deg) ;left:6vw; top:56vh;}
+    70%  { transform:rotate(480deg) ;left:6vw; top:64vh;}
+    80%  { transform:rotate(0deg) ;left:6vw; top:72vh;}
+    90%  { transform:rotate(480deg) ;left:6vw; top:80vh;}
+    100% { transform:rotate(180deg) ;left:6vw; top:88vh;}
+  }
+  
+@keyframes mongodb_animation {
+    100%   { transform:rotate(0deg) ;left:78vw; top:2vh;}
+    90%  { transform:rotate(360deg) ;left:78vw; top:15vh;}
+    80%  { transform:rotate(0deg) ;left:78vw; top:24vh;}
+    70%  { transform:rotate(720deg) ;left:78vw; top:32vh;}
+    60%  { transform:rotate(0deg) ;left:78vw; top:40vh;}
+    50%  { transform:rotate(480deg) ;left:78vw; top:48vh;}
+    40%  { transform:rotate(0deg) ;left:78vw; top:56vh;}
+    30%  { transform:rotate(480deg) ;left:78vw; top:64vh;}
+    20%  { transform:rotate(0deg) ;left:78vw; top:72vh;}
+    10%  { transform:rotate(720deg) ;left:78vw; top:80vh;}
+    0% { transform:rotate(180deg) ;left:78vw; top:88vh;}
+  }
+#form2{
+    display: none;
+}
+  form{
+      width: 43vw;
+      height:37.8vh;
+      position: absolute;
+      top:27.4vh;
+      left:26.93vw;
+      background-size: 100% 100%;
+      display:flexbox;
+      color: rgb(16 47 93);
+      background:linear-gradient(rgb(255 93 0 / 109%),#d944ff59 );
+  }
+  .heading{
+      text-align: center;
+      font-size: 1.6rem;
+      margin-top: 2vh;
+      color: rgb(1 0 116 / 83%);
+  }
+  .tab_1{
+      width:38vw;
+      height:36vh;
+      margin-left:2.5vw ;
+      margin-top: 1vh;
+      display: none;
+  }
+  #open,#open1{
+      font-size:large;
+  }
+  #tab_2{
+      margin-top: -1vh;
+  }
+  label{
+      width: 19w;
+      height:4.5vh ;
+      margin-top: 1vh;
+      font-size: 1.2rem;
+      display:inline-flex;
+      padding-top:4px;
+      text-shadow:0.5px 0.5px 0.5px green ;
+  }
+  input{
+     width: 16vw;
+     height:4vh; 
+     text-shadow:0.5px 0.5px 0.5px green ;
+     font-size: 1rem;
+     border-color: rgb(255, 145, 0) rgb(241, 167, 9) rgb(243, 23, 23) rgb(255, 0, 55);
+     border-style:2px groove;
+     border-radius: 8px;
+  }
+  #address{
+      width: 36vw;
+      height: 8vh;
+  }
+  .btns{
+      position: absolute;
+      right: 2vw;
+      bottom: 0.5vh;
+  }
+  button{
+      width: auto;
+      height: auto;
+      padding: 1vh 2vw;
+      background: green;
+      color: white;
+      border: none;
+      font-size: 1.2rem;
+      border-radius: 8px;
+  }
+  #prev,#sumbit{
+      display: none;
+  }
+  .dots{
+      position: absolute;
+      left:37%;
+      bottom: 0.5vh;
+  }
+  .step {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #acaaaa;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  .step.active {
+    opacity: 1;
+  }
+
+  .step.finish {
+    background-color: #2c2c2c;
+  }
+  button:hover{
+      background: blue;
+      border-radius: 0px;
+  }
+  
+input.invalid {
+    background-color: #ffdddd;
+  }
+
+  .validation_text{
+      color: green;
+      font-size: 1rem;
+      text-align: center;
+      font-weight: bold;
+  }
+
+
+  @media screen and  (max-width:1200px)and  (min-width:800px){
+    .bytecode_logo{
+       width: 6vw;
+       height: 8vh;
+    }
+    .mongoDB_logo{
+       width: 10vw;
+       height: 15vh;
+    }
+    .react_logo{
+        width: 6vw;
+        height: 8vh;
+    }
+    .front_end_logo{
+        width: 6vw;
+        height: 10vh;
+    }
+    .nodejs_logo{
+       width: 8vw;
+       height: 11vh;
+    }
+      .heading{
+          font-size: 1.4rem;
+      }
+    
+      label{
+          font-size: 1.15rem;
+      }
+      input{ 
+         font-size: 1rem;
+      }
+      .btns{
+          bottom: 0.1vh;
+      }
+      button{
+          font-size: 1rem;
+      }
+    
+  }
+  @media screen and  (max-width:799.9px)and  (min-width:500px){
+    ::placeholder{
+        font-size: 0.9rem;
+    }
+    .Form_Background{
+        background-image: url("ch.jpg");
+    }
+    
+    .mongoDB_logo{
+       width: 10vw;
+       height: 10vh;
+    }
+    
+    .front_end_logo{
+        width: 6vw;
+        height: 7vh;
+    }
+    .nodejs_logo{
+       width: 8vw;
+       height: 8vh;
+    }
+      form{
+          width: 63vw;
+          height:50.1vh;
+          top:18vh;
+          left:16.93vw;
+          background:linear-gradient(126deg,rgb(2, 1, 1, 0.5) 50%, rgba(255, 255, 255, 0.09) 50%);
+          
+      }
+      .heading{
+          font-size: 1.2rem;
+          margin-top: 2vh;
+          color: #c7ffcb
+      }
+      .tab_1{
+          width:58vw;
+          height:30vh ;
+          margin-left:1.8vw ;
+          margin-top: 5vh;
+          padding-left: 3vw;
+          color: rgb(203 176 152);
+      }
+      label{
+          width: 27vw;
+          height:4vh ;
+          margin-top: 3.5vh;
+          font-size: 1.1rem;
+          padding-top:4px;
+      }
+      input{
+         width: 27vw;
+         height:4vh; 
+         font-size: 0.9rem;
+         border-color: #606162;
+      }
+      #address{
+          width: 55vw;
+      }
+      .btns{
+          position: absolute;
+          right: 2vw;
+          bottom: 3.5vh;
+      }
+      button{
+          background: #000000bd;
+          color: #1fd7fff2;
+          text-shadow: 1.5px 0.8px 1px #562bdbe3;
+          font-size: 1rem;
+          padding: 1.5vh 4vw;
+      }
+     
+      button:hover{
+          background: #373b3c;
+          
+      }
+      .dots{
+        left:35%;
+        bottom: 0.5vh;
+    }
+    .step {
+        height: 8.8px;
+        width: 8.8px;
+      }
+      #first_ps,#second_ps{
+          width:23vw;
+      }
+  }
+  @media screen and  (max-width:799.9px)and  (min-width:680px){
+    .bytecode_logo{
+        width: 8vw;
+        height: 8vh;
+        top: 2vh;
+        left: 42vw;
+     }
+     .react_logo{
+        width: 6vw;
+        height: 6.3vh;
+    }
+
+  }
+  @media screen and  (max-width:679.9px)and  (min-width:600px){
+    .bytecode_logo{
+        width: 9vw;
+        height: 7.8vh;
+        top: 2vh;
+        left: 42vw;
+     }
+     .react_logo{
+        width: 7vw;
+        height: 6vh;
+    }
+
+  }
+  @media screen and  (max-width:599.9px)and  (min-width:500px){
+    .bytecode_logo{
+        width: 9.4vw;
+        height: 7vh;
+        top: 2vh;
+        left: 41.5vw;
+     }
+     .react_logo{
+        width: 7vw;
+        height: 5vh;
+    }
+
+  }
+  @media screen and  (max-width:499.9px)and  (min-width:400px){
+    .bytecode_logo{
+        width: 12vw;
+        height: 7.5vh;
+        top: 2vh;
+        left: 41.5vw;
+     }
+
+  }
+  @media screen and  (max-width:399.9px)and  (min-width:200px){
+    .bytecode_logo{
+        width: 12vw;
+        height: 6.5vh;
+        top: 2vh;
+        left: 44vw;
+     }
+  }
+  @media screen and  (max-width:499.9px)and  (min-width:400px){
+    #regForm,#animation{
+        display: none;
+    }
+   #form2{
+       display: block;
+   }
+    .Form_Background{
+        background-image: none;
+        background-color: black;
+    }
+   
+      
+        form{
+            width: 70vw;
+            height: 70vh; 
+            top: 17vh;
+            left: 14vw;
+          
+        }
+        
+        legend{
+            font-size: 1.2rem;
+            margin-top:3vh ;
+            color: white;
+            margin-left:21vw ;
+            margin-bottom: 3vh;
+            
+        }
+        .main{
+            margin-left:2vw ;
+            height: 53vh;
+        }
+        .box{
+            width: auto;
+            height:4vh;
+            font-size: 0.65rem;
+            margin-top: 0.8vh;
+            margin-left:2vw ;
+        }
+       input{
+           width: 50vw;
+       }
+        #l_name{
+            margin-left: 5vw;
+        }
+        .submit{
+            width: 28vw;
+            height: 4vh;
+            font-size: 0.9rem;
+        }
+        .for_button{
+            margin-left: 21vw;
+        }
+        #material-icons{
+            font-size:19px;
+            padding-top:4px;
+            color: rgb(235 196 255);
+           
+        }
+        
+      }
+      @media screen and  (max-width:399.9px)and  (min-width:200px){
+        #regForm,#animation{
+            display: none;
+        }
+       #form2{
+           display: block;
+       }
+        .Form_Background{
+            background-image:none;
+            background-color: black;
+        }
+       
+          
+            form{
+                width: 86vw;
+                height: 70vh; 
+                top: 17vh;
+                left: 7vw;
+              
+            }
+            
+            legend{
+                font-size: 1.2rem;
+                margin-top:3vh ;
+                color: white;
+                margin-left:23vw ;
+                margin-bottom: 3vh;
+                
+            }
+            .main{
+                margin-left:2vw ;
+                height: 53vh;
+            }
+            .box{
+                width: auto;
+                height:4.5vh;
+                font-size: 0.65rem;
+                margin-top: 0.8vh;
+                margin-left:2vw ;
+            }
+           input{
+               width: 64vw;
+               height: 4.5vh;
+           }
+            #l_name{
+                margin-left: 6vw;
+            }
+            .submit{
+                width: 28vw;
+                height: 4vh;
+                font-size: 0.9rem;
+            }
+            .for_button{
+                margin-left: 31vw;
+                margin-top: 3vh;
+            }
+            #material-icons{
+                font-size:19px;
+                padding-top:4px;
+                color: rgb(235 196 255);
+               
+            }
+            
+          }
+    
